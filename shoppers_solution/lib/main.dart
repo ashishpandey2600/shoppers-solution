@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shoppers_solution/pages/HomeScreen.dart';
+import 'package:shoppers_solution/pages/splashcreenpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      home: SplashScreenPage(),
     );
   }
 }

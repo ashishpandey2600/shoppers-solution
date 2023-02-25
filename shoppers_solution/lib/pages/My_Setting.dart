@@ -12,6 +12,8 @@ class MySetting extends StatefulWidget {
 class _MySettingState extends State<MySetting> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(title: Text("My Setting"),),
+    );
   }
 }
