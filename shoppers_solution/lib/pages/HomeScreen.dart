@@ -24,122 +24,122 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Text("Shoppers solution"),
-            ElevatedButton.icon(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => LoginScreen(),
-                  ),
-                );
-              },
-              icon: Icon(Icons.login),
-              label: Text("login"),
-            ),
-          ],
-        ),
-      ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            DrawerHeader(
-              decoration: BoxDecoration(color: Colors.blue),
-              child: Column(
-                children: [
-                  Icon(Icons.person),
-                  Text("Ashish Mradul Avadhesh"),
-                  ListTile(
-                    title: Text(
-                      "view profile",
-                      style: TextStyle(fontSize: 10),
-                    ),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => LoginScreen(),
-                        ),
-                      );
-                    },
-                  )
-                ],
-              ),
-            ),
-            ListTile(
-              title: Text("All Categories"),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => AllCategories(),
-                  ),
-                );
-              },
-            ),
-            ListTile(
-              title: Text("My Order"),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => MyOrder(),
-                  ),
-                );
-              },
-            ),
-            ListTile(
-              title: Text("My Cart"),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => MyCart(),
-                  ),
-                );
-              },
-            ),
-            ListTile(
-              title: Text("My Account"),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => MyAccount(),
-                  ),
-                );
-              },
-            ),
-            ListTile(
-              title: Text("My Setting"),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => MySetting(),
-                  ),
-                );
-              },
-            ),
-            ListTile(
-              title: Text("Contact"),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Contact(),
-                  ),
-                );
-              },
-            ),
-            ElevatedButton(onPressed: () {}, child: Text("Logout")),
-          ],
-        ),
-      ),
+      // appBar: AppBar(
+      //   title: Row(
+      //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //     children: [
+      //       Text("Shoppers solution"),
+      //       ElevatedButton.icon(
+      //         onPressed: () {
+      //           Navigator.push(
+      //             context,
+      //             MaterialPageRoute(
+      //               builder: (context) => LoginScreen(),
+      //             ),
+      //           );
+      //         },
+      //         icon: Icon(Icons.login),
+      //         label: Text("login"),
+      //       ),
+      //     ],
+      //   ),
+      // ),
+      // drawer: Drawer(
+      //   child: ListView(
+      //     children: [
+      //       DrawerHeader(
+      //         decoration: BoxDecoration(color: Colors.blue),
+      //         child: Column(
+      //           children: [
+      //             Icon(Icons.person),
+      //             Text("Ashish Mradul Avadhesh"),
+      //             ListTile(
+      //               title: Text(
+      //                 "view profile",
+      //                 style: TextStyle(fontSize: 10),
+      //               ),
+      //               onTap: () {
+      //                 Navigator.push(
+      //                   context,
+      //                   MaterialPageRoute(
+      //                     builder: (context) => LoginScreen(),
+      //                   ),
+      //                 );
+      //               },
+      //             )
+      //           ],
+      //         ),
+      //       ),
+      //       ListTile(
+      //         title: Text("All Categories"),
+      //         onTap: () {
+      //           Navigator.push(
+      //             context,
+      //             MaterialPageRoute(
+      //               builder: (context) => AllCategories(),
+      //             ),
+      //           );
+      //         },
+      //       ),
+      //       ListTile(
+      //         title: Text("My Order"),
+      //         onTap: () {
+      //           Navigator.push(
+      //             context,
+      //             MaterialPageRoute(
+      //               builder: (context) => MyOrder(),
+      //             ),
+      //           );
+      //         },
+      //       ),
+      //       ListTile(
+      //         title: Text("My Cart"),
+      //         onTap: () {
+      //           Navigator.push(
+      //             context,
+      //             MaterialPageRoute(
+      //               builder: (context) => MyCart(),
+      //             ),
+      //           );
+      //         },
+      //       ),
+      //       ListTile(
+      //         title: Text("My Account"),
+      //         onTap: () {
+      //           Navigator.push(
+      //             context,
+      //             MaterialPageRoute(
+      //               builder: (context) => MyAccount(),
+      //             ),
+      //           );
+      //         },
+      //       ),
+      //       ListTile(
+      //         title: Text("My Setting"),
+      //         onTap: () {
+      //           Navigator.push(
+      //             context,
+      //             MaterialPageRoute(
+      //               builder: (context) => MySetting(),
+      //             ),
+      //           );
+      //         },
+      //       ),
+      //       ListTile(
+      //         title: Text("Contact"),
+      //         onTap: () {
+      //           Navigator.push(
+      //             context,
+      //             MaterialPageRoute(
+      //               builder: (context) => Contact(),
+      //             ),
+      //           );
+      //         },
+      //       ),
+      //       ElevatedButton(onPressed: () {}, child: Text("Logout")),
+      //     ],
+      //   ),
+      // ),
       body: Center(child: ListView(
         children: [
            Container(padding: EdgeInsets.all(10),
