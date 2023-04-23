@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 
 class CartModel extends ChangeNotifier {
   final List _shopItems = [
-    ["1L Packing Mustard Oil", "100", "assets/a.jpg", Colors.green],
-    ["10L Packing Mustard Oil", "101", "assets/a.jpg", Colors.orange],
-    ["1L Packing Mustard Oil", "110", "assets/a.jpg", Colors.yellow],
-    ["1L Packing Mustard Oil", "103", "assets/a.jpg", Colors.red],
+    ["1L Packing Mustard Oil", "210", "assets/m.png", Colors.green],
+    ["2L Packing Mustard Oil", "410", "assets/m.png", Colors.red],
+    ["5L Packing Mustard Oil", "1000", "assets/m.png", Colors.orange],
+    ["10L Packing Mustard Oil", "2000", "assets/m.png", Colors.yellow],
+    ["15L Packing Mustard Oil", "3000", "assets/m.png", Colors.red],
   ];
 
   //list of cart items
@@ -27,7 +28,7 @@ class CartModel extends ChangeNotifier {
   String calculateTotal() {
     double totalPrice = 0;
 
-    for(int i=0;i< _cartItems.length;i++){
+    for (int i = 0; i < _cartItems.length; i++) {
       totalPrice += double.parse(_cartItems[i][1]);
     }
     return totalPrice.toStringAsFixed(2);

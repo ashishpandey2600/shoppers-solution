@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:solution_shoppers/components/roundbutton.dart';
 import 'package:solution_shoppers/screens/login.dart';
@@ -22,18 +24,22 @@ class _OptionScreenState extends State<OptionScreen> {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: SingleChildScrollView(
           child: Column(children: [
-            Padding(
-              padding: const EdgeInsets.all(100),
-              child: Image(image: AssetImage("assets/f.png")),
+            SizedBox(
+              height: 25,
             ),
+            Text(
+              "Shopper's Solution",
+              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+            ),
+            Image(image: AssetImage("assets/f.png")),
             SizedBox(
               height: 20,
             ),
             RoundButton(
                 title: "Login",
                 onPress: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => LogIn()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LogIn()));
                 }),
             SizedBox(
               height: 20,
@@ -41,8 +47,8 @@ class _OptionScreenState extends State<OptionScreen> {
             RoundButton(
                 title: "Signup",
                 onPress: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => SignUp()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SignUp()));
                 })
           ]),
         ),
