@@ -116,10 +116,10 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
           child: Column(
         children: [
-          SizedBox(
+         const SizedBox(
             height: 20,
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 24),
             child: Text(
               "Let's order the pure and healthy Oil... ",
@@ -129,14 +129,14 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-          SizedBox(
+         const SizedBox(
             height: 10,
           ),
-          Padding(
+        const  Padding(
             padding: EdgeInsets.symmetric(horizontal: 8.0),
             child: Divider(),
           ),
-          Padding(
+         const Padding(
             padding: EdgeInsets.symmetric(horizontal: 8),
             child: Text(
               "Pure oil",
@@ -147,7 +147,7 @@ class _HomePageState extends State<HomePage> {
             builder: (context, value, child) {
               return GridView.builder(
                   itemCount: value.shopItem.length,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate:const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2, childAspectRatio: 1 / 1.2),
                   padding: const EdgeInsets.all(12),
                   itemBuilder: (context, index) {
@@ -172,7 +172,7 @@ class _HomePageState extends State<HomePage> {
   logout() {
     auth.signOut();
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => OptionScreen()));
+        context, MaterialPageRoute(builder: (context) =>const OptionScreen()));
   }
 
   SnackBarItem(int index) {

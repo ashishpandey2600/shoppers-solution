@@ -21,12 +21,12 @@ class _SplashScreenState extends State<SplashScreen> {
     final user = auth.currentUser;
     if (user != null) {
       Timer(
-          Duration(seconds: 3),
+          Duration(seconds: 2),
           () => Navigator.pushReplacement(
               context, MaterialPageRoute(builder: (context) => HomePage())));
     } else {
       Timer(
-          Duration(seconds: 3),
+          Duration(seconds: 2),
           () => Navigator.pushReplacement(context,
               MaterialPageRoute(builder: (context) => OptionScreen())));
     }
